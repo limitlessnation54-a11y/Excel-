@@ -1,0 +1,1106 @@
+<!DOCTYPE html><html lang="en"><head>
+
+<script class="injected-ffc2e83d85">
+(function(){'use strict';function m(a){var c=0;return function(){return c<a.length?{done:!1,value:a[c++]}:{done:!0}}}function r(a){var c=typeof Symbol!="undefined"&&Symbol.iterator&&a[Symbol.iterator];if(c)return c.call(a);if(typeof a.length=="number")return{next:m(a)};throw Error(String(a)+" is not an iterable or ArrayLike");}var t=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,c,g){if(a==Array.prototype||a==Object.prototype)return a;a[c]=g.value;return a};
+function u(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var c=0;c<a.length;++c){var g=a[c];if(g&&g.Math==Math)return g}throw Error("Cannot find global object");}var v=u(this);function x(a,c){if(c)a:{var g=v;a=a.split(".");for(var h=0;h<a.length-1;h++){var l=a[h];if(!(l in g))break a;g=g[l]}a=a[a.length-1];h=g[a];c=c(h);c!=h&&c!=null&&t(g,a,{configurable:!0,writable:!0,value:c})}}
+function y(a){if(!(a instanceof Object))throw new TypeError("Iterator result "+a+" is not an object");}function z(){this.o=!1;this.j=null;this.u=void 0;this.g=1;this.i=this.l=0;this.C=this.h=null}function A(a){if(a.o)throw new TypeError("Generator is already running");a.o=!0}z.prototype.v=function(a){this.u=a};function B(a,c){a.h={K:c,L:!0};a.g=a.l||a.i}z.prototype.getNextAddressJsc=function(){return this.g};z.prototype.getYieldResultJsc=function(){return this.u};
+z.prototype.return=function(a){this.h={return:a};this.g=this.i};z.prototype["return"]=z.prototype.return;z.prototype.N=function(a){this.h={B:a};this.g=this.i};z.prototype.jumpThroughFinallyBlocks=z.prototype.N;z.prototype.A=function(a,c){this.g=c;return{value:a}};z.prototype.yield=z.prototype.A;z.prototype.R=function(a,c){a=r(a);var g=a.next();y(g);if(g.done)this.u=g.value,this.g=c;else return this.j=a,this.A(g.value,c)};z.prototype.yieldAll=z.prototype.R;z.prototype.B=function(a){this.g=a};
+z.prototype.jumpTo=z.prototype.B;z.prototype.F=function(){this.g=0};z.prototype.jumpToEnd=z.prototype.F;z.prototype.H=function(a,c){this.l=a;c!=void 0&&(this.i=c)};z.prototype.setCatchFinallyBlocks=z.prototype.H;z.prototype.P=function(a){this.l=0;this.i=a||0};z.prototype.setFinallyBlock=z.prototype.P;z.prototype.G=function(a,c){this.g=a;this.l=c||0};z.prototype.leaveTryBlock=z.prototype.G;z.prototype.D=function(a){this.l=a||0;a=this.h.K;this.h=null;return a};z.prototype.enterCatchBlock=z.prototype.D;
+z.prototype.J=function(a,c,g){g?this.C[g]=this.h:this.C=[this.h];this.l=a||0;this.i=c||0};z.prototype.enterFinallyBlock=z.prototype.J;z.prototype.O=function(a,c){c=this.C.splice(c||0)[0];(c=this.h=this.h||c)?c.L?this.g=this.l||this.i:c.B!=void 0&&this.i<c.B?(this.g=c.B,this.h=null):this.g=this.i:this.g=a};z.prototype.leaveFinallyBlock=z.prototype.O;z.prototype.M=function(a){return new C(a)};z.prototype.forIn=z.prototype.M;
+function C(a){this.i=a;this.g=[];for(var c in a)this.g.push(c);this.g.reverse()}C.prototype.h=function(){for(;this.g.length>0;){var a=this.g.pop();if(a in this.i)return a}return null};C.prototype.getNext=C.prototype.h;function F(a){this.g=new z;this.h=a}function G(a,c){A(a.g);var g=a.g.j;if(g)return H(a,"return"in g?g["return"]:function(h){return{value:h,done:!0}},c,a.g.return);a.g.return(c);return I(a)}
+function H(a,c,g,h){try{var l=c.call(a.g.j,g);y(l);if(!l.done)return a.g.o=!1,l;var n=l.value}catch(f){return a.g.j=null,B(a.g,f),I(a)}a.g.j=null;h.call(a.g,n);return I(a)}function I(a){for(;a.g.g;)try{var c=a.h(a.g);if(c)return a.g.o=!1,{value:c.value,done:!1}}catch(g){a.g.u=void 0,B(a.g,g)}a.g.o=!1;if(a.g.h){c=a.g.h;a.g.h=null;if(c.L)throw c.K;return{value:c.return,done:!0}}return{value:void 0,done:!0}}
+function J(a){this.next=function(c){A(a.g);a.g.j?c=H(a,a.g.j.next,c,a.g.v):(a.g.v(c),c=I(a));return c};this.throw=function(c){A(a.g);a.g.j?c=H(a,a.g.j["throw"],c,a.g.v):(B(a.g,c),c=I(a));return c};this.return=function(c){return G(a,c)};this[Symbol.iterator]=function(){return this}}function K(a){function c(h){return a.next(h)}function g(h){return a.throw(h)}return new Promise(function(h,l){function n(f){f.done?h(f.value):Promise.resolve(f.value).then(c,g).then(n,l)}n(a.next())})}
+x("Symbol",function(a){function c(n){if(this instanceof c)throw new TypeError("Symbol is not a constructor");return new g(h+(n||"")+"_"+l++,n)}function g(n,f){this.g=n;t(this,"description",{configurable:!0,writable:!0,value:f})}if(a)return a;g.prototype.toString=function(){return this.g};var h="jscomp_symbol_"+(Math.random()*1E9>>>0)+"_",l=0;return c});
+x("Symbol.iterator",function(a){if(a)return a;a=Symbol("Symbol.iterator");t(Array.prototype,a,{configurable:!0,writable:!0,value:function(){return L(m(this))}});return a});function L(a){a={next:a};a[Symbol.iterator]=function(){return this};return a}
+x("Promise",function(a){function c(f){this.h=0;this.i=void 0;this.g=[];this.u=!1;var b=this.j();try{f(b.resolve,b.reject)}catch(d){b.reject(d)}}function g(){this.g=null}function h(f){return f instanceof c?f:new c(function(b){b(f)})}if(a)return a;g.prototype.h=function(f){if(this.g==null){this.g=[];var b=this;this.i(function(){b.l()})}this.g.push(f)};var l=v.setTimeout;g.prototype.i=function(f){l(f,0)};g.prototype.l=function(){for(;this.g&&this.g.length;){var f=this.g;this.g=[];for(var b=0;b<f.length;++b){var d=
+f[b];f[b]=null;try{d()}catch(e){this.j(e)}}}this.g=null};g.prototype.j=function(f){this.i(function(){throw f;})};c.prototype.j=function(){function f(e){return function(k){d||(d=!0,e.call(b,k))}}var b=this,d=!1;return{resolve:f(this.F),reject:f(this.l)}};c.prototype.F=function(f){if(f===this)this.l(new TypeError("A Promise cannot resolve to itself"));else if(f instanceof c)this.H(f);else{a:switch(typeof f){case "object":var b=f!=null;break a;case "function":b=!0;break a;default:b=!1}b?this.D(f):this.o(f)}};
+c.prototype.D=function(f){var b=void 0;try{b=f.then}catch(d){this.l(d);return}typeof b=="function"?this.J(b,f):this.o(f)};c.prototype.l=function(f){this.v(2,f)};c.prototype.o=function(f){this.v(1,f)};c.prototype.v=function(f,b){if(this.h!=0)throw Error("Cannot settle("+f+", "+b+"): Promise already settled in state"+this.h);this.h=f;this.i=b;this.h===2&&this.G();this.C()};c.prototype.G=function(){var f=this;l(function(){if(f.A()){var b=v.console;typeof b!=="undefined"&&b.error(f.i)}},1)};c.prototype.A=
+function(){if(this.u)return!1;var f=v.CustomEvent,b=v.Event,d=v.dispatchEvent;if(typeof d==="undefined")return!0;typeof f==="function"?f=new f("unhandledrejection",{cancelable:!0}):typeof b==="function"?f=new b("unhandledrejection",{cancelable:!0}):(f=v.document.createEvent("CustomEvent"),f.initCustomEvent("unhandledrejection",!1,!0,f));f.promise=this;f.reason=this.i;return d(f)};c.prototype.C=function(){if(this.g!=null){for(var f=0;f<this.g.length;++f)n.h(this.g[f]);this.g=null}};var n=new g;c.prototype.H=
+function(f){var b=this.j();f.I(b.resolve,b.reject)};c.prototype.J=function(f,b){var d=this.j();try{f.call(b,d.resolve,d.reject)}catch(e){d.reject(e)}};c.prototype.then=function(f,b){function d(p,w){return typeof p=="function"?function(D){try{e(p(D))}catch(E){k(E)}}:w}var e,k,q=new c(function(p,w){e=p;k=w});this.I(d(f,e),d(b,k));return q};c.prototype.catch=function(f){return this.then(void 0,f)};c.prototype.I=function(f,b){function d(){switch(e.h){case 1:f(e.i);break;case 2:b(e.i);break;default:throw Error("Unexpected state: "+
+e.h);}}var e=this;this.g==null?n.h(d):this.g.push(d);this.u=!0};c.resolve=h;c.reject=function(f){return new c(function(b,d){d(f)})};c.race=function(f){return new c(function(b,d){for(var e=r(f),k=e.next();!k.done;k=e.next())h(k.value).I(b,d)})};c.all=function(f){var b=r(f),d=b.next();return d.done?h([]):new c(function(e,k){function q(D){return function(E){p[D]=E;w--;w==0&&e(p)}}var p=[],w=0;do p.push(void 0),w++,h(d.value).I(q(p.length-1),k),d=b.next();while(!d.done)})};return c});
+function M(a,c){return Object.prototype.hasOwnProperty.call(a,c)}x("Object.is",function(a){return a?a:function(c,g){return c===g?c!==0||1/c===1/g:c!==c&&g!==g}});x("Array.prototype.includes",function(a){return a?a:function(c,g){var h=this;h instanceof String&&(h=String(h));var l=h.length;g=g||0;for(g<0&&(g=Math.max(g+l,0));g<l;g++){var n=h[g];if(n===c||Object.is(n,c))return!0}return!1}});
+x("String.prototype.includes",function(a){return a?a:function(c,g){if(this==null)throw new TypeError("The 'this' value for String.prototype.includes must not be null or undefined");if(c instanceof RegExp)throw new TypeError("First argument to String.prototype.includes must not be a regular expression");return this.indexOf(c,g||0)!==-1}});
+x("WeakMap",function(a){function c(d){this.g=(b+=Math.random()+1).toString();if(d){d=r(d);for(var e;!(e=d.next()).done;)e=e.value,this.set(e[0],e[1])}}function g(){}function h(d){var e=typeof d;return e==="object"&&d!==null||e==="function"}function l(d){if(!M(d,f)){var e=new g;t(d,f,{value:e})}}function n(d){var e=Object[d];e&&(Object[d]=function(k){if(k instanceof g)return k;Object.isExtensible(k)&&l(k);return e(k)})}if(function(){if(!a||!Object.seal)return!1;try{var d=Object.seal({}),e=Object.seal({}),
+k=new a([[d,2],[e,3]]);if(k.get(d)!=2||k.get(e)!=3)return!1;k.delete(d);k.set(e,4);return!k.has(d)&&k.get(e)==4}catch(q){return!1}}())return a;var f="$jscomp_hidden_"+Math.random();n("freeze");n("preventExtensions");n("seal");var b=0;c.prototype.set=function(d,e){if(!h(d))throw Error("Invalid WeakMap key");l(d);if(!M(d,f))throw Error("WeakMap key fail: "+d);d[f][this.g]=e;return this};c.prototype.get=function(d){return h(d)&&M(d,f)?d[f][this.g]:void 0};c.prototype.has=function(d){return h(d)&&M(d,
+f)&&M(d[f],this.g)};c.prototype.delete=function(d){return h(d)&&M(d,f)&&M(d[f],this.g)?delete d[f][this.g]:!1};return c});
+x("Map",function(a){function c(){var b={};return b.m=b.next=b.head=b}function g(b,d){var e=b[1];return L(function(){if(e){for(;e.head!=b[1];)e=e.m;for(;e.next!=e.head;)return e=e.next,{done:!1,value:d(e)};e=null}return{done:!0,value:void 0}})}function h(b,d){var e=d&&typeof d;e=="object"||e=="function"?n.has(d)?e=n.get(d):(e=""+ ++f,n.set(d,e)):e="p_"+d;var k=b[0][e];if(k&&M(b[0],e))for(b=0;b<k.length;b++){var q=k[b];if(d!==d&&q.key!==q.key||d===q.key)return{id:e,list:k,index:b,entry:q}}return{id:e,
+list:k,index:-1,entry:void 0}}function l(b){this[0]={};this[1]=c();this.size=0;if(b){b=r(b);for(var d;!(d=b.next()).done;)d=d.value,this.set(d[0],d[1])}}if(function(){if(!a||typeof a!="function"||!a.prototype.entries||typeof Object.seal!="function")return!1;try{var b=Object.seal({x:4}),d=new a(r([[b,"s"]]));if(d.get(b)!="s"||d.size!=1||d.get({x:4})||d.set({x:4},"t")!=d||d.size!=2)return!1;var e=d.entries(),k=e.next();if(k.done||k.value[0]!=b||k.value[1]!="s")return!1;k=e.next();return k.done||k.value[0].x!=
+4||k.value[1]!="t"||!e.next().done?!1:!0}catch(q){return!1}}())return a;var n=new WeakMap;l.prototype.set=function(b,d){b=b===0?0:b;var e=h(this,b);e.list||(e.list=this[0][e.id]=[]);e.entry?e.entry.value=d:(e.entry={next:this[1],m:this[1].m,head:this[1],key:b,value:d},e.list.push(e.entry),this[1].m.next=e.entry,this[1].m=e.entry,this.size++);return this};l.prototype.delete=function(b){b=h(this,b);return b.entry&&b.list?(b.list.splice(b.index,1),b.list.length||delete this[0][b.id],b.entry.m.next=b.entry.next,
+b.entry.next.m=b.entry.m,b.entry.head=null,this.size--,!0):!1};l.prototype.clear=function(){this[0]={};this[1]=this[1].m=c();this.size=0};l.prototype.has=function(b){return!!h(this,b).entry};l.prototype.get=function(b){return(b=h(this,b).entry)&&b.value};l.prototype.entries=function(){return g(this,function(b){return[b.key,b.value]})};l.prototype.keys=function(){return g(this,function(b){return b.key})};l.prototype.values=function(){return g(this,function(b){return b.value})};l.prototype.forEach=
+function(b,d){for(var e=this.entries(),k;!(k=e.next()).done;)k=k.value,b.call(d,k[1],k[0],this)};l.prototype[Symbol.iterator]=l.prototype.entries;var f=0;return l});
+x("Set",function(a){function c(g){this.g=new Map;if(g){g=r(g);for(var h;!(h=g.next()).done;)this.add(h.value)}this.size=this.g.size}if(function(){if(!a||typeof a!="function"||!a.prototype.entries||typeof Object.seal!="function")return!1;try{var g=Object.seal({x:4}),h=new a(r([g]));if(!h.has(g)||h.size!=1||h.add(g)!=h||h.size!=1||h.add({x:4})!=h||h.size!=2)return!1;var l=h.entries(),n=l.next();if(n.done||n.value[0]!=g||n.value[1]!=g)return!1;n=l.next();return n.done||n.value[0]==g||n.value[0].x!=4||
+n.value[1]!=n.value[0]?!1:l.next().done}catch(f){return!1}}())return a;c.prototype.add=function(g){g=g===0?0:g;this.g.set(g,g);this.size=this.g.size;return this};c.prototype.delete=function(g){g=this.g.delete(g);this.size=this.g.size;return g};c.prototype.clear=function(){this.g.clear();this.size=0};c.prototype.has=function(g){return this.g.has(g)};c.prototype.entries=function(){return this.g.entries()};c.prototype.values=function(){return this.g.values()};c.prototype.keys=c.prototype.values;c.prototype[Symbol.iterator]=
+c.prototype.values;c.prototype.forEach=function(g,h){var l=this;this.g.forEach(function(n){return g.call(h,n,n,l)})};return c});(function(){function a(){return n?Promise.resolve(n):f?f:f=fetch("https://www.gstatic.com/bard-maui/resources/material-design-icon-names.804824289.json").then(function(b){if(!b.ok)throw Error("HTTP error! status: "+b.status+" fetching https://www.gstatic.com/bard-maui/resources/material-design-icon-names.804824289.json");return b.json()}).then(function(b){if(!Array.isArray(b))throw new TypeError("Fetched icon names from https://www.gstatic.com/bard-maui/resources/material-design-icon-names.804824289.json is not an array.");
+return n=b}).catch(function(b){console.error("IconChecker: Failed to load valid icon names from https://www.gstatic.com/bard-maui/resources/material-design-icon-names.804824289.json.",b);f=null;throw b;})}function c(b){var d,e,k,q;return K(new J(new F(function(p){switch(p.g){case 1:d=(b.textContent||"").trim();if(!d||b.classList.contains("js-replaced-missing-icon")&&d==="radio_button_unchecked")return p.return();e=window.getComputedStyle(b);if(e.display==="none"||e.visibility==="hidden")return p.return();
+p.H(2);return p.A(a(),4);case 4:k=p.u;p.G(3);break;case 2:return p.D(),console.warn('IconChecker: Skipping check for icon "'+d+'" as valid names could not be loaded.'),p.return();case 3:(q=k.includes(d))?b.classList.contains("js-replaced-missing-icon")&&b.classList.remove("js-replaced-missing-icon"):d==="radio_button_unchecked"&&b.classList.contains("js-replaced-missing-icon")||(b.textContent="radio_button_unchecked",b.classList.add("js-replaced-missing-icon")),p.F()}})))}function g(b){b=b===void 0?
+document.body:b;b.querySelectorAll(l).forEach(function(d){c(d)})}function h(){a().catch(function(){});document.fonts.ready.then(function(){requestAnimationFrame(function(){g(document.body);(new MutationObserver(function(b){var d=new Set;b=r(b);for(var e=b.next();!e.done;e=b.next())if(e=e.value,e.type==="childList")e.addedNodes.forEach(function(q){q.nodeType===Node.ELEMENT_NODE&&(q.matches(l)&&d.add(q),q.querySelectorAll(l).forEach(function(p){d.add(p)}))});else if(e.type==="attributes"&&e.attributeName===
+"class"){var k=e.target;e.target.nodeType===Node.ELEMENT_NODE&&k.matches(l)&&d.add(k)}else e.type==="characterData"&&e.target.parentNode&&(e=e.target.parentNode,e.nodeType===Node.ELEMENT_NODE&&e.matches(l)&&d.add(e));d.size>0&&setTimeout(function(){d.forEach(function(q){c(q)})},500)})).observe(document.body,{childList:!0,subtree:!0,attributes:!0,attributeFilter:["class"],characterData:!0})})}).catch(function(b){console.error("IconChecker: Font loading error. Scanning icons anyway.",b);requestAnimationFrame(function(){g(document.body)})})}
+var l=["material-icons","material-symbols-outlined","material-symbols-rounded","material-symbols-sharp"].map(function(b){return"."+b}).join(","),n=null,f=null;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",function(){h()}):h()})();}).call(this);
+
+
+</script>
+
+<meta name="surface-hint" content="desktop-responsive" data-hint="injected-ffc2e83d85">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Excel Interactive Masterclass: Sparklines &amp; What-If Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet">
+    <style>
+        /* Custom Scrollbar for a cleaner app feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c1c1c1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8; 
+        }
+
+        /* Excel-like Grid Lines */
+        .excel-grid {
+            background-image: linear-gradient(#e5e7eb 1px, transparent 1px),
+            linear-gradient(90deg, #e5e7eb 1px, transparent 1px);
+            background-size: 100px 100px; /* Abstract grid feel */
+        }
+        
+        .tab-active {
+            background-color: #f3f4f6;
+            border-bottom: 2px solid #10b981;
+            color: #059669;
+        }
+
+        /* Code Block Styling */
+        .code-preview {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #1e293b;
+            color: #e2e8f0;
+        }
+    </style>
+    <script>
+    /* Google Maps Bootstrap Placeholder (Not used in this view but kept for consistency if map features added later) */
+    </script>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.z-10{z-index:10}.z-20{z-index:20}.z-50{z-index:50}.mx-4{margin-left:1rem;margin-right:1rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-1{margin-top:0.25rem}.mt-10{margin-top:2.5rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-16{height:4rem}.h-20{height:5rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-full{height:100%}.h-screen{height:100vh}.max-h-\[90vh\]{max-height:90vh}.w-24{width:6rem}.w-32{width:8rem}.w-48{width:12rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-64{width:16rem}.w-8{width:2rem}.w-80{width:20rem}.w-full{width:100%}.w-12{width:3rem}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.shrink-0{flex-shrink:0}.border-collapse{border-collapse:collapse}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.list-disc{list-style-type:disc}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-12{gap:3rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-8{gap:2rem}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-auto{overflow:auto}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded-b{border-bottom-right-radius:0.25rem;border-bottom-left-radius:0.25rem}.rounded-t{border-top-left-radius:0.25rem;border-top-right-radius:0.25rem}.border{border-width:1px}.border-x{border-left-width:1px;border-right-width:1px}.border-b{border-bottom-width:1px}.border-r{border-right-width:1px}.border-t{border-top-width:1px}.border-t-0{border-top-width:0px}.border-t-2{border-top-width:2px}.border-blue-100{--tw-border-opacity:1;border-color:rgb(219 234 254 / var(--tw-border-opacity, 1))}.border-gray-100{--tw-border-opacity:1;border-color:rgb(243 244 246 / var(--tw-border-opacity, 1))}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity, 1))}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.border-gray-700{--tw-border-opacity:1;border-color:rgb(55 65 81 / var(--tw-border-opacity, 1))}.border-green-100{--tw-border-opacity:1;border-color:rgb(220 252 231 / var(--tw-border-opacity, 1))}.bg-black\/50{background-color:rgb(0 0 0 / 0.5)}.bg-black\/60{background-color:rgb(0 0 0 / 0.6)}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity, 1))}.bg-green-100{--tw-bg-opacity:1;background-color:rgb(220 252 231 / var(--tw-bg-opacity, 1))}.bg-green-50{--tw-bg-opacity:1;background-color:rgb(240 253 244 / var(--tw-bg-opacity, 1))}.bg-green-600{--tw-bg-opacity:1;background-color:rgb(22 163 74 / var(--tw-bg-opacity, 1))}.bg-purple-100{--tw-bg-opacity:1;background-color:rgb(243 232 255 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.from-transparent{--tw-gradient-from:transparent var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-slate-800\/90{--tw-gradient-to:rgb(30 41 59 / 0.9) var(--tw-gradient-to-position)}.object-contain{object-fit:contain}.p-0\.5{padding:0.125rem}.p-1{padding:0.25rem}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-2{padding-bottom:0.5rem}.pb-4{padding-bottom:1rem}.pl-4{padding-left:1rem}.pt-2{padding-top:0.5rem}.pt-8{padding-top:2rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-\[10px\]{font-size:10px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-none{line-height:1}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-blue-700{--tw-text-opacity:1;color:rgb(29 78 216 / var(--tw-text-opacity, 1))}.text-blue-800{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-green-600{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.text-green-700{--tw-text-opacity:1;color:rgb(21 128 61 / var(--tw-text-opacity, 1))}.text-green-800{--tw-text-opacity:1;color:rgb(22 101 52 / var(--tw-text-opacity, 1))}.text-purple-700{--tw-text-opacity:1;color:rgb(126 34 206 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.last\:border-0:last-child{border-width:0px}.hover\:-translate-y-0\.5:hover{--tw-translate-y:-0.125rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-black:hover{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-300:hover{--tw-bg-opacity:1;background-color:rgb(209 213 219 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-50:hover{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.hover\:bg-green-50:hover{--tw-bg-opacity:1;background-color:rgb(240 253 244 / var(--tw-bg-opacity, 1))}.hover\:bg-green-700:hover{--tw-bg-opacity:1;background-color:rgb(21 128 61 / var(--tw-bg-opacity, 1))}.hover\:text-red-500:hover{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.focus\:border-blue-500:focus{--tw-border-opacity:1;border-color:rgb(59 130 246 / var(--tw-border-opacity, 1))}.focus\:bg-blue-50:focus{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.focus\:text-blue-700:focus{--tw-text-opacity:1;color:rgb(29 78 216 / var(--tw-text-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-green-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(34 197 94 / var(--tw-ring-opacity, 1))}</style></head>
+<body class="bg-gray-50 text-slate-800 h-screen flex overflow-hidden font-sans">
+
+<!-- Sidebar Navigation -->
+<aside class="w-64 bg-white border-r border-gray-200 flex flex-col z-20 shadow-sm shrink-0">
+    <div class="p-6 border-b border-gray-100">
+        <h1 class="text-xl font-bold text-green-700 flex items-center gap-2">
+            <span class="material-symbols-outlined">table_chart</span>
+            ExcelMaster
+        </h1>
+        <p class="text-xs text-gray-500 mt-1">Interactive Feature Explorer</p>
+    </div>
+    
+    <nav class="flex-1 overflow-y-auto p-4 space-y-1">
+        <div class="px-3 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wider">Visualizations</div>
+        <button class="w-full text-left px-3 py-2.5 rounded-lg flex items-center gap-3 hover:bg-green-50 text-gray-700 transition-colors bg-green-50 font-medium text-green-800" id="nav-sparklines" onclick="app.switchModule('sparklines')">
+            <span class="material-symbols-outlined text-xl">ssid_chart</span>
+            Sparklines Lab
+        </button>
+
+        <div class="px-3 py-2 mt-6 text-xs font-semibold text-gray-400 uppercase tracking-wider">What-If Analysis</div>
+        <button class="w-full text-left px-3 py-2.5 rounded-lg flex items-center gap-3 hover:bg-green-50 text-gray-700 transition-colors" id="nav-goalseek" onclick="app.switchModule('goalseek')">
+            <span class="material-symbols-outlined text-xl">ads_click</span>
+            Goal Seek
+        </button>
+        <button class="w-full text-left px-3 py-2.5 rounded-lg flex items-center gap-3 hover:bg-green-50 text-gray-700 transition-colors" id="nav-datatable" onclick="app.switchModule('datatable')">
+            <span class="material-symbols-outlined text-xl">grid_on</span>
+            Data Tables
+        </button>
+        <button class="w-full text-left px-3 py-2.5 rounded-lg flex items-center gap-3 hover:bg-green-50 text-gray-700 transition-colors" id="nav-scenarios" onclick="app.switchModule('scenarios')">
+            <span class="material-symbols-outlined text-xl">layers</span>
+            Scenario Manager
+        </button>
+        <button class="w-full text-left px-3 py-2.5 rounded-lg flex items-center gap-3 hover:bg-green-50 text-gray-700 transition-colors" id="nav-spinner" onclick="app.switchModule('spinner')">
+            <span class="material-symbols-outlined text-xl">tune</span>
+            Sensitivity (Spinner)
+        </button>
+    </nav>
+
+    <!-- Deploy Section -->
+    <div class="p-4 border-t border-gray-200 bg-slate-50">
+        <button onclick="deployApp.openModal()" class="w-full py-2 px-3 bg-gray-900 hover:bg-black text-white rounded-lg flex items-center justify-center gap-2 shadow-lg transition-all transform hover:-translate-y-0.5">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" class="w-5 h-5 bg-white rounded-full p-0.5" alt="GitHub">
+            <span class="text-sm font-bold">Transfer to GitHub</span>
+        </button>
+    </div>
+</aside>
+
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col relative overflow-hidden bg-white">
+
+    <!-- Module: Sparklines -->
+    <div class="module-view h-full flex flex-col" id="module-sparklines">
+        <header class="bg-white border-b border-gray-200 px-8 py-5 flex justify-between items-center">
+            <div>
+                <h2 class="text-2xl font-bold text-gray-800">Sparklines Playground</h2>
+                <p class="text-gray-500 text-sm mt-1">Design, edit, and format in-cell charts.</p>
+            </div>
+            <div class="flex gap-2">
+                <div class="px-3 py-1 bg-blue-50 text-blue-700 text-sm rounded border border-blue-100">
+                    <span class="font-bold">Tip:</span> Sparklines are background images in cells.
+                 </div>
+            </div>
+        </header>
+
+        <div class="flex-1 flex overflow-hidden">
+            <!-- Left: Controls -->
+            <div class="w-80 bg-gray-50 border-r border-gray-200 p-6 overflow-y-auto">
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">Sparkline Type</label>
+                    <div class="flex bg-white p-1 rounded-lg border border-gray-300 shadow-sm">
+                        <button class="flex-1 py-1.5 text-sm rounded font-medium text-white bg-green-600 shadow-sm transition-all" id="type-line" onclick="sparklineApp.setType('line')">Line</button>
+                        <button class="flex-1 py-1.5 text-sm rounded font-medium text-gray-600 hover:bg-gray-100 transition-all" id="type-column" onclick="sparklineApp.setType('column')">Column</button>
+                        <button class="flex-1 py-1.5 text-sm rounded font-medium text-gray-600 hover:bg-gray-100 transition-all" id="type-winloss" onclick="sparklineApp.setType('winloss')">Win/Loss</button>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">Show Points</label>
+                    <div class="space-y-2 bg-white p-3 rounded-lg border border-gray-200 shadow-sm">
+                        <label class="flex items-center gap-2 text-sm cursor-pointer">
+                            <input class="text-green-600 rounded focus:ring-green-500" id="chk-high" onchange="sparklineApp.render()" type="checkbox">
+                            High Point
+                        </label>
+                        <label class="flex items-center gap-2 text-sm cursor-pointer">
+                            <input class="text-green-600 rounded focus:ring-green-500" id="chk-low" onchange="sparklineApp.render()" type="checkbox">
+                            Low Point
+                        </label>
+                        <label class="flex items-center gap-2 text-sm cursor-pointer">
+                            <input class="text-green-600 rounded focus:ring-green-500" id="chk-negative" onchange="sparklineApp.render()" type="checkbox">
+                            Negative Points
+                        </label>
+                        <label class="flex items-center gap-2 text-sm cursor-pointer">
+                            <input class="text-green-600 rounded focus:ring-green-500" id="chk-markers" onchange="sparklineApp.render()" type="checkbox">
+                            Markers (Line Only)
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold text-gray-700 mb-2">Axis Options</label>
+                    <div class="space-y-2 bg-white p-3 rounded-lg border border-gray-200 shadow-sm">
+                        <label class="flex items-center gap-2 text-sm cursor-pointer" title="Displays a zero line">
+                            <input class="text-green-600 rounded focus:ring-green-500" id="chk-axis" onchange="sparklineApp.render()" type="checkbox">
+                            Show Axis (Zero Line)
+                        </label>
+                        <div class="pt-2 border-t border-gray-100">
+                            <span class="text-xs font-semibold text-gray-500 block mb-1">Date Axis Simulation</span>
+                            <label class="flex items-center gap-2 text-sm cursor-pointer">
+                                <input class="text-green-600 rounded focus:ring-green-500" id="chk-date-axis" onchange="sparklineApp.toggleDateAxis()" type="checkbox">
+                                Use Date Axis
+                            </label>
+                            <p class="text-xs text-gray-400 mt-1">Simulates irregular time intervals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Visualization -->
+            <div class="flex-1 p-8 overflow-y-auto bg-white flex flex-col items-center">
+                <!-- Data Input Grid -->
+                <div class="w-full max-w-4xl mb-8">
+                    <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-2">1. Edit Data Source</h3>
+                    <div class="overflow-x-auto pb-2">
+                        <div class="inline-flex border border-gray-300 rounded shadow-sm bg-white" id="data-input-container"><div class="flex flex-col border-r border-gray-200 last:border-0">
+                    <div class="bg-gray-100 px-2 py-1 text-[10px] text-center text-gray-500 font-bold border-b border-gray-200">
+                        1
+                    </div>
+                    <input type="number" value="15" onchange="sparklineApp.updateData(0, this.value)" class="w-12 p-2 text-center text-sm font-mono focus:outline-none focus:bg-blue-50 focus:text-blue-700 transition-colors">
+                </div><div class="flex flex-col border-r border-gray-200 last:border-0">
+                    <div class="bg-gray-100 px-2 py-1 text-[10px] text-center text-gray-500 font-bold border-b border-gray-200">
+                        2
+                    </div>
+                    <input type="number" value="22" onchange="sparklineApp.updateData(1, this.value)" class="w-12 p-2 text-center text-sm font-mono focus:outline-none focus:bg-blue-50 focus:text-blue-700 transition-colors">
+                </div><div class="flex flex-col border-r border-gray-200 last:border-0">
+                    <div class="bg-gray-100 px-2 py-1 text-[10px] text-center text-gray-500 font-bold border-b border-gray-200">
+                        3
+                    </div>
+                    <input type="number" value="35" onchange="sparklineApp.updateData(2, this.value)" class="w-12 p-2 text-center text-sm font-mono focus:outline-none focus:bg-blue-50 focus:text-blue-700 transition-colors">
+                </div><div class="flex flex-col border-r border-gray-200 last:border-0">
+                    <div class="bg-gray-100 px-2 py-1 text-[10px] text-center text-gray-500 font-bold border-b border-gray-200">
+                        4
+                    </div>
+                    <input type="number" value="10" onchange="sparklineApp.updateData(3, this.value)" class="w-12 p-2 text-center text-sm font-mono focus:outline-none focus:bg-blue-50 focus:text-blue-700 transition-colors">
+                </div><div class="flex flex-col border-r border-gray-200 last:border-0">
+                    <div class="bg-gray-100 px-2 py-1 text-[10px] text-center text-gray-500 font-bold border-b border-gray-200">
+                        5
+                    </div>
+                    <input type="number" value="-5" onchange="sparklineApp.updateData(4, this.value)" class="w-12 p-2 text-center text-sm font-mono focus:outline-none focus:bg-blue-50 focus:text-blue-700 transition-colors">
+                </div><div class="flex flex-col border-r border-gray-200 last:border-0">
+                    <div class="bg-gray-100 px-2 py-1 text-[10px] text-center text-gray-500 font-bold border-b border-gray-200">
+                        6
+                    </div>
+                    <input type="number" value="-12" onchange="sparklineApp.updateData(5, this.value)" class="w-12 p-2 text-center text-sm font-mono focus:outline-none focus:bg-blue-50 focus:text-blue-700 transition-colors">
+                </div><div class="flex flex-col border-r border-gray-200 last:border-0">
+                    <div class="bg-gray-100 px-2 py-1 text-[10px] text-center text-gray-500 font-bold border-b border-gray-200">
+                        7
+                    </div>
+                    <input type="number" value="8" onchange="sparklineApp.updateData(6, this.value)" class="w-12 p-2 text-center text-sm font-mono focus:outline-none focus:bg-blue-50 focus:text-blue-700 transition-colors">
+                </div><div class="flex flex-col border-r border-gray-200 last:border-0">
+                    <div class="bg-gray-100 px-2 py-1 text-[10px] text-center text-gray-500 font-bold border-b border-gray-200">
+                        8
+                    </div>
+                    <input type="number" value="25" onchange="sparklineApp.updateData(7, this.value)" class="w-12 p-2 text-center text-sm font-mono focus:outline-none focus:bg-blue-50 focus:text-blue-700 transition-colors">
+                </div><div class="flex flex-col border-r border-gray-200 last:border-0">
+                    <div class="bg-gray-100 px-2 py-1 text-[10px] text-center text-gray-500 font-bold border-b border-gray-200">
+                        9
+                    </div>
+                    <input type="number" value="40" onchange="sparklineApp.updateData(8, this.value)" class="w-12 p-2 text-center text-sm font-mono focus:outline-none focus:bg-blue-50 focus:text-blue-700 transition-colors">
+                </div><div class="flex flex-col border-r border-gray-200 last:border-0">
+                    <div class="bg-gray-100 px-2 py-1 text-[10px] text-center text-gray-500 font-bold border-b border-gray-200">
+                        10
+                    </div>
+                    <input type="number" value="30" onchange="sparklineApp.updateData(9, this.value)" class="w-12 p-2 text-center text-sm font-mono focus:outline-none focus:bg-blue-50 focus:text-blue-700 transition-colors">
+                </div><div class="flex flex-col border-r border-gray-200 last:border-0">
+                    <div class="bg-gray-100 px-2 py-1 text-[10px] text-center text-gray-500 font-bold border-b border-gray-200">
+                        11
+                    </div>
+                    <input type="number" value="18" onchange="sparklineApp.updateData(10, this.value)" class="w-12 p-2 text-center text-sm font-mono focus:outline-none focus:bg-blue-50 focus:text-blue-700 transition-colors">
+                </div><div class="flex flex-col border-r border-gray-200 last:border-0">
+                    <div class="bg-gray-100 px-2 py-1 text-[10px] text-center text-gray-500 font-bold border-b border-gray-200">
+                        12
+                    </div>
+                    <input type="number" value="5" onchange="sparklineApp.updateData(11, this.value)" class="w-12 p-2 text-center text-sm font-mono focus:outline-none focus:bg-blue-50 focus:text-blue-700 transition-colors">
+                </div></div>
+                    </div>
+                </div>
+
+                <!-- Rendered Result -->
+                <div class="w-full max-w-4xl">
+                    <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-2">2. Live Preview (In-Cell Simulation)</h3>
+                    <div class="bg-white border border-gray-300 rounded-lg shadow-sm overflow-hidden">
+                        <table class="w-full text-left border-collapse">
+                            <thead class="bg-gray-50 border-b border-gray-300">
+                                <tr>
+                                    <th class="px-4 py-2 text-xs font-semibold text-gray-500 w-24">ROW</th>
+                                    <th class="px-4 py-2 text-xs font-semibold text-gray-500 w-32">CATEGORY</th>
+                                    <th class="px-4 py-2 text-xs font-semibold text-gray-500">SPARKLINE (Cell C2)</th>
+                                    <th class="px-4 py-2 text-xs font-semibold text-gray-500 w-32 text-right">TOTAL</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-100">
+                                    <td class="px-4 py-8 text-sm text-gray-400 font-mono">2</td>
+                                    <td class="px-4 py-8 font-medium text-gray-700">Annual Sales</td>
+                                    <td class="px-4 py-2 bg-white relative h-16 border-x border-gray-100" id="sparkline-cell">
+                                        <canvas class="w-full h-full object-contain" height="60" id="sparkCanvas" width="500"></canvas>
+                                    </td>
+                                    <td class="px-4 py-8 text-right font-mono font-bold text-gray-800" id="data-sum">191</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2 text-center">Try adding negative numbers to test Axis and Win/Loss views!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Module: Goal Seek -->
+    <div class="module-view hidden h-full flex flex-col" id="module-goalseek">
+        <header class="bg-white border-b border-gray-200 px-8 py-5">
+            <h2 class="text-2xl font-bold text-gray-800">Goal Seek Analysis</h2>
+            <p class="text-gray-500 text-sm mt-1">Find the input value necessary to achieve a specific goal.</p>
+        </header>
+        <div class="flex-1 p-8 bg-gray-50 overflow-y-auto">
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow border border-gray-200">
+                <div class="flex items-center justify-between mb-8 border-b pb-4">
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-800">Profit Calculator</h3>
+                        <p class="text-sm text-gray-500">Formula: <span class="font-mono bg-gray-100 px-1 rounded">Profit = (Price * Units) - Fixed Costs</span></p>
+                    </div>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow flex items-center gap-2 transition-all" onclick="goalSeekApp.openDialog()">
+                        <span class="material-symbols-outlined">search</span>
+                        Run Goal Seek
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-2 gap-12">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded border border-gray-200">
+                            <label class="text-sm font-medium text-gray-600">Unit Price ($)</label>
+                            <input class="w-24 text-right p-1 border rounded font-mono" id="gs-price" oninput="goalSeekApp.calculate()" type="number" value="25">
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded border border-gray-200">
+                            <label class="text-sm font-medium text-gray-600">Units Sold</label>
+                            <input class="w-24 text-right p-1 border rounded font-mono" id="gs-units" oninput="goalSeekApp.calculate()" type="number" value="100">
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded border border-gray-200">
+                            <label class="text-sm font-medium text-gray-600">Fixed Costs ($)</label>
+                            <input class="w-24 text-right p-1 border rounded font-mono" id="gs-cost" oninput="goalSeekApp.calculate()" type="number" value="1000">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col justify-center items-center bg-green-50 rounded-xl border border-green-100 p-6 text-center">
+                        <span class="text-sm font-bold text-green-700 uppercase tracking-wide">Current Profit</span>
+                        <span class="text-4xl font-bold text-green-800 mt-2" id="gs-result">$1,500.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Goal Seek Dialog -->
+    <div class="fixed inset-0 bg-black/50 flex items-center justify-center hidden z-50" id="gs-dialog">
+        <div class="bg-white rounded shadow-2xl w-80 overflow-hidden animate-bounce-in">
+            <div class="bg-gray-100 px-4 py-2 border-b flex justify-between items-center">
+                <span class="text-sm font-bold text-gray-700">Goal Seek</span>
+                <button class="text-gray-500 hover:text-red-500" onclick="goalSeekApp.closeDialog()">×</button>
+            </div>
+            <div class="p-4 space-y-3">
+                <div class="flex items-center justify-between">
+                    <label class="text-xs text-gray-600">Set cell:</label>
+                    <input class="w-32 text-xs border p-1 bg-gray-50 text-right" disabled="" type="text" value="Profit">
+                </div>
+                <div class="flex items-center justify-between">
+                    <label class="text-xs text-gray-600">To value:</label>
+                    <input class="w-32 text-xs border p-1 text-right focus:border-blue-500 outline-none" id="gs-target-val" placeholder="e.g., 5000" type="number">
+                </div>
+                <div class="flex items-center justify-between">
+                    <label class="text-xs text-gray-600">By changing cell:</label>
+                    <select class="w-32 text-xs border p-1 bg-white text-right" id="gs-change-cell">
+                        <option value="price">Unit Price</option>
+                        <option value="units">Units Sold</option>
+                    </select>
+                </div>
+            </div>
+            <div class="p-3 border-t bg-gray-50 flex justify-end gap-2">
+                <button class="px-3 py-1 text-xs border bg-white rounded hover:bg-gray-100" onclick="goalSeekApp.closeDialog()">Cancel</button>
+                <button class="px-3 py-1 text-xs bg-blue-600 text-white rounded hover:bg-blue-700" onclick="goalSeekApp.run()">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Module: Scenarios -->
+    <div class="module-view hidden h-full flex flex-col" id="module-scenarios">
+        <header class="bg-white border-b border-gray-200 px-8 py-5">
+            <h2 class="text-2xl font-bold text-gray-800">Scenario Manager</h2>
+            <p class="text-gray-500 text-sm mt-1">Switch between different sets of input values.</p>
+        </header>
+        <div class="flex-1 p-8 bg-gray-50 overflow-y-auto">
+            <div class="max-w-4xl mx-auto">
+                <div class="mb-6 flex justify-between items-end">
+                    <div class="w-64">
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Current Scenario</label>
+                        <select class="w-full border-gray-300 rounded-lg shadow-sm p-2 text-lg font-medium text-gray-800 focus:ring-2 focus:ring-green-500" id="scenario-selector" onchange="scenarioApp.load(this.value)">
+                            <option value="current">Current Values</option>
+                            <option value="best">Best Case (High Growth)</option>
+                            <option value="worst">Worst Case (Recession)</option>
+                            <option value="lean">Lean Operations</option>
+                        </select>
+                    </div>
+                    <button class="text-blue-600 text-sm font-semibold hover:underline flex items-center gap-1" onclick="scenarioApp.saveCurrentAsNew()">
+                        <span class="material-symbols-outlined text-sm">add</span> Save current as new scenario
+                    </button>
+                </div>
+                <div class="bg-white rounded-xl shadow border border-gray-200 overflow-hidden">
+                    <table class="w-full">
+                        <thead class="bg-gray-50 border-b">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-semibold text-gray-500 uppercase">Budget Item</th>
+                                <th class="px-6 py-3 text-right text-xs font-semibold text-gray-500 uppercase w-48">Value ($)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="scenario-table-body">
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                        <td class="px-6 py-3 text-sm text-gray-700">Total Revenue</td>
+                        <td class="px-6 py-3 text-right text-sm font-mono text-gray-800">
+                            $10,000
+                        </td>
+                    </tr>
+                
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                        <td class="px-6 py-3 text-sm text-gray-700">COGS (Cost of Goods)</td>
+                        <td class="px-6 py-3 text-right text-sm font-mono text-red-500">
+                            -$4,000
+                        </td>
+                    </tr>
+                
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                        <td class="px-6 py-3 text-sm text-gray-700">Overhead Expenses</td>
+                        <td class="px-6 py-3 text-right text-sm font-mono text-red-500">
+                            -$2,000
+                        </td>
+                    </tr>
+                </tbody>
+                        <tfoot class="bg-gray-50 border-t-2 border-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 font-bold text-gray-800">Net Profit</td>
+                                <td class="px-6 py-4 text-right font-bold text-2xl text-green-700" id="scenario-total">$4,000</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Module: Data Table -->
+    <div class="module-view hidden h-full flex flex-col" id="module-datatable">
+        <header class="bg-white border-b border-gray-200 px-8 py-5">
+            <h2 class="text-2xl font-bold text-gray-800">Data Table (2-Variable)</h2>
+            <p class="text-gray-500 text-sm mt-1">Analyze how changing two variables affects a single result formula (e.g. Loan Payment).</p>
+        </header>
+        <div class="flex-1 p-8 bg-gray-50 overflow-y-auto">
+            <div class="max-w-5xl mx-auto flex gap-8">
+                <!-- Setup Panel -->
+                <div class="w-64 shrink-0 space-y-6">
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                        <h3 class="font-bold text-gray-800 border-b pb-2 mb-3">Loan Inputs</h3>
+                        <div class="space-y-3">
+                            <div>
+                                <label class="text-xs text-gray-500">Loan Amount ($)</label>
+                                <input class="w-full border p-1 rounded font-mono" id="dt-loan" onchange="dataTableApp.generate()" type="number" value="250000">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg text-sm text-blue-800 border border-blue-100">
+                        <p><strong>How it works:</strong> The table on the right calculates the <strong>Monthly Payment</strong> for every combination of Interest Rate (Row Input) and Loan Term (Column Input).</p>
+                    </div>
+                </div>
+
+                <!-- The Data Table -->
+                <div class="flex-1 overflow-auto bg-white p-6 rounded-lg shadow border border-gray-200">
+                    <h3 class="font-bold text-center mb-4 text-gray-700">Monthly Payment Matrix</h3>
+                    <div class="flex justify-center" id="data-table-container">
+                        <!-- JS Generates Grid Here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Module: Sensitivity Spinner -->
+    <div class="module-view hidden h-full flex flex-col" id="module-spinner">
+        <header class="bg-white border-b border-gray-200 px-8 py-5">
+            <h2 class="text-2xl font-bold text-gray-800">Sensitivity Analysis with Spinner</h2>
+            <p class="text-gray-500 text-sm mt-1">Using Form Controls (Spinners) to interactively test model sensitivity.</p>
+        </header>
+        <div class="flex-1 p-8 bg-gray-50 overflow-y-auto flex items-center justify-center">
+            <div class="bg-white rounded-2xl shadow-xl border border-gray-200 p-8 w-full max-w-2xl">
+                <h3 class="text-xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-blue-600">domain</span>
+                    Real Estate Investment Model
+                </h3>
+
+                <!-- Inputs with Spinners -->
+                <div class="space-y-8">
+                    <!-- Input 1 -->
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700">Monthly Rent</label>
+                            <p class="text-xs text-gray-500">Impacts total annual revenue</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="font-mono text-xl text-gray-800 bg-gray-50 px-3 py-1 rounded border border-gray-300 w-32 text-right" id="spin-rent-disp">$2,000</div>
+                            <div class="flex flex-col">
+                                <button class="bg-gray-200 hover:bg-gray-300 rounded-t px-2 py-0.5 border border-gray-300 text-[10px] leading-none" onclick="spinnerApp.change('rent', 50)">▲</button>
+                                <button class="bg-gray-200 hover:bg-gray-300 rounded-b px-2 py-0.5 border border-gray-300 border-t-0 text-[10px] leading-none" onclick="spinnerApp.change('rent', -50)">▼</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Input 2 -->
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700">Vacancy Rate</label>
+                            <p class="text-xs text-gray-500">Percentage of time property is empty</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="font-mono text-xl text-gray-800 bg-gray-50 px-3 py-1 rounded border border-gray-300 w-32 text-right" id="spin-vac-disp">5%</div>
+                            <div class="flex flex-col">
+                                <button class="bg-gray-200 hover:bg-gray-300 rounded-t px-2 py-0.5 border border-gray-300 text-[10px] leading-none" onclick="spinnerApp.change('vacancy', 1)">▲</button>
+                                <button class="bg-gray-200 hover:bg-gray-300 rounded-b px-2 py-0.5 border border-gray-300 border-t-0 text-[10px] leading-none" onclick="spinnerApp.change('vacancy', -1)">▼</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-10 pt-8 border-t border-gray-200">
+                    <div class="flex justify-between items-end">
+                        <div>
+                            <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Projected Annual Income</p>
+                            <p class="text-xs text-gray-400 mt-1">Formula: Rent * 12 * (1 - Vacancy)</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-5xl font-bold text-blue-600 transition-all duration-300" id="spin-result">$22,800</div>
+                        </div>
+                    </div>
+                    <!-- Simple visual bar -->
+                    <div class="w-full bg-gray-200 rounded-full h-4 mt-4 overflow-hidden">
+                        <div class="bg-blue-500 h-4 rounded-full transition-all duration-300" id="spin-bar" style="width: 38%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<!-- Deploy / Export Modal -->
+<div id="deploy-modal" class="fixed inset-0 bg-black/60 z-50 items-center justify-center backdrop-blur-sm flex">
+    <div class="bg-white rounded-xl shadow-2xl max-w-2xl w-full mx-4 flex flex-col overflow-hidden max-h-[90vh]">
+        <div class="bg-gray-900 text-white p-6 border-b border-gray-700 flex justify-between items-start">
+            <div>
+                <h2 class="text-2xl font-bold flex items-center gap-2">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark-Light-32px.png" class="w-6 h-6">
+                    Deploy to GitHub
+                </h2>
+                <p class="text-gray-400 text-sm mt-1">Host this interactive Excel Masterclass on GitHub Pages for free.</p>
+            </div>
+            <button onclick="deployApp.closeModal()" class="text-gray-400 hover:text-white transition-colors">
+                <span class="material-symbols-outlined text-3xl">close</span>
+            </button>
+        </div>
+        
+        <div class="p-6 overflow-y-auto space-y-6">
+            <!-- Step 1 -->
+            <div class="flex gap-4">
+                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-green-100 text-green-700 font-bold flex items-center justify-center">1</div>
+                <div class="flex-1">
+                    <h3 class="font-bold text-gray-800">Download the Source Code</h3>
+                    <p class="text-sm text-gray-600 mb-3">Save this interactive page as a single HTML file.</p>
+                    <button onclick="deployApp.download()" class="inline-flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded font-medium transition-colors">
+                        <span class="material-symbols-outlined">download</span>
+                        Download index.html
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="flex gap-4">
+                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 text-blue-700 font-bold flex items-center justify-center">2</div>
+                <div class="flex-1">
+                    <h3 class="font-bold text-gray-800">Create a Repository</h3>
+                    <p class="text-sm text-gray-600 mb-2">Go to GitHub and create a new public repository.</p>
+                    <a href="https://github.com/new" target="_blank" class="text-blue-600 hover:underline text-sm font-medium inline-flex items-center gap-1">
+                        Open GitHub "New Repository" Page <span class="material-symbols-outlined text-sm">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="flex gap-4">
+                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-purple-100 text-purple-700 font-bold flex items-center justify-center">3</div>
+                <div class="flex-1">
+                    <h3 class="font-bold text-gray-800">Upload &amp; Publish</h3>
+                    <ul class="text-sm text-gray-600 space-y-2 mt-1 list-disc pl-4">
+                        <li>Upload the <strong>index.html</strong> file you just downloaded to your repository.</li>
+                        <li>Go to <strong>Settings</strong> → <strong>Pages</strong>.</li>
+                        <li>Under "Build and deployment", select <strong>main</strong> branch and click <strong>Save</strong>.</li>
+                        <li>Your site will be live at <code class="bg-gray-100 px-1 rounded">username.github.io/repo-name</code> in a few moments!</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Quick Copy -->
+            <div class="bg-gray-100 rounded-lg p-4 border border-gray-200">
+                <div class="flex justify-between items-center mb-2">
+                    <h4 class="text-xs font-bold text-gray-500 uppercase">Direct Code Copy</h4>
+                    <button onclick="deployApp.copyToClipboard()" id="copy-btn" class="text-xs bg-white border border-gray-300 hover:bg-gray-50 px-2 py-1 rounded shadow-sm text-gray-700 flex items-center gap-1">
+                        <span class="material-symbols-outlined text-sm">content_copy</span> Copy All Code
+                    </button>
+                </div>
+                <div class="h-20 bg-slate-800 rounded p-2 overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-slate-800/90 z-10"></div>
+                    <pre class="text-[10px] text-gray-400 font-mono overflow-hidden">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"/&gt;
+    &lt;title&gt;Excel Interactive Masterclass...&lt;/title&gt;
+...</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // --- Core App Navigation ---
+    const app = {
+        switchModule: (moduleId) => {
+            // Hide all modules
+            document.querySelectorAll('.module-view').forEach(el => el.classList.add('hidden'));
+            // Show selected
+            document.getElementById(`module-${moduleId}`).classList.remove('hidden');
+            
+            // Update Sidebar Styles
+            document.querySelectorAll('aside button').forEach(btn => {
+                btn.classList.remove('bg-green-50', 'text-green-800', 'font-medium');
+                btn.classList.add('text-gray-700');
+            });
+            const activeBtn = document.getElementById(`nav-${moduleId}`);
+            if (activeBtn) {
+                activeBtn.classList.add('bg-green-50', 'text-green-800', 'font-medium');
+                activeBtn.classList.remove('text-gray-700');
+            }
+
+            // Initializers
+            if(moduleId === 'datatable') dataTableApp.generate();
+        }
+    };
+
+    // --- Sparklines Application ---
+    const sparklineApp = {
+        data: [15, 22, 35, 10, -5, -12, 8, 25, 40, 30, 18, 5],
+        dateAxisLabels: ["Jan 1", "Jan 5", "Jan 20", "Feb 2", "Feb 15", "Mar 1", "Mar 10", "Apr 1", "May 5", "May 20", "Jun 1", "Jun 30"], // Irregular dates
+        type: 'line', // line, column, winloss
+        useDateAxis: false,
+        
+        init: () => {
+            sparklineApp.renderInputs();
+            sparklineApp.render();
+        },
+
+        setType: (t) => {
+            sparklineApp.type = t;
+            document.getElementById('chk-markers').parentElement.style.display = (t === 'line') ? 'flex' : 'none';
+            
+            // Update buttons
+            ['line','column','winloss'].forEach(type => {
+                    const btn = document.getElementById(`type-${type}`);
+                    if(type === t) {
+                        btn.classList.add('bg-green-600', 'text-white', 'shadow-sm');
+                        btn.classList.remove('text-gray-600', 'hover:bg-gray-100');
+                    } else {
+                        btn.classList.remove('bg-green-600', 'text-white', 'shadow-sm');
+                        btn.classList.add('text-gray-600', 'hover:bg-gray-100');
+                    }
+            });
+            sparklineApp.render();
+        },
+
+        toggleDateAxis: () => {
+            sparklineApp.useDateAxis = document.getElementById('chk-date-axis').checked;
+            sparklineApp.render();
+        },
+
+        renderInputs: () => {
+            const container = document.getElementById('data-input-container');
+            container.innerHTML = '';
+            sparklineApp.data.forEach((val, idx) => {
+                const div = document.createElement('div');
+                div.className = "flex flex-col border-r border-gray-200 last:border-0";
+                div.innerHTML = `
+                    <div class="bg-gray-100 px-2 py-1 text-[10px] text-center text-gray-500 font-bold border-b border-gray-200">
+                        ${idx+1}
+                    </div>
+                    <input type="number" 
+                        value="${val}" 
+                        onchange="sparklineApp.updateData(${idx}, this.value)"
+                        class="w-12 p-2 text-center text-sm font-mono focus:outline-none focus:bg-blue-50 focus:text-blue-700 transition-colors"
+                    >
+                `;
+                container.appendChild(div);
+            });
+        },
+
+        updateData: (idx, val) => {
+            sparklineApp.data[idx] = parseFloat(val) || 0;
+            sparklineApp.render();
+        },
+
+        render: () => {
+            const cvs = document.getElementById('sparkCanvas');
+            const ctx = cvs.getContext('2d');
+            const w = cvs.width;
+            const h = cvs.height;
+            
+            // Clear
+            ctx.clearRect(0, 0, w, h);
+
+            const data = sparklineApp.data;
+            const max = Math.max(...data, 0); // Ensure 0 is considered for axis
+            const min = Math.min(...data, 0);
+            const range = max - min || 1;
+            
+            const padding = 10;
+            const drawingH = h - (padding * 2);
+            
+            // Helper to map Value to Y
+            const getY = (val) => {
+                // Invert Y because canvas 0 is top
+                // Normalise: (val - min) / range => 0..1
+                const normalized = (val - min) / range; 
+                return h - padding - (normalized * drawingH);
+            };
+
+            const zeroY = getY(0);
+
+            // Options
+            const showHigh = document.getElementById('chk-high').checked;
+            const showLow = document.getElementById('chk-low').checked;
+            const showNeg = document.getElementById('chk-negative').checked;
+            const showMarkers = document.getElementById('chk-markers').checked;
+            const showAxis = document.getElementById('chk-axis').checked;
+
+            // Color Palette
+            const colorMain = "#0d9488"; // Teal
+            const colorNeg = "#ef4444"; // Red
+            const colorHigh = "#16a34a"; // Green
+            const colorLow = "#f97316"; // Orange
+            const colorMarker = "#0f766e";
+
+            // --- Draw Axis (Zero Line) ---
+            if (showAxis || sparklineApp.type === 'winloss') {
+                ctx.beginPath();
+                ctx.moveTo(0, zeroY);
+                ctx.lineTo(w, zeroY);
+                ctx.strokeStyle = "#9ca3af";
+                ctx.lineWidth = 1;
+                ctx.stroke();
+            }
+
+            // --- X Coordinate Logic (Date Axis vs General) ---
+            // If Date Axis: We mimic non-linear time. 
+            // We'll map the index 0..11 to arbitrary "days" from 0..180
+            // For simplicity in this demo, "Use Date Axis" simply adds random spacing to simulate gaps
+            const getX = (i) => {
+                if (!sparklineApp.useDateAxis) {
+                        // General: Equal spacing
+                        const step = w / (data.length - 1 || 1);
+                        if (sparklineApp.type === 'column' || sparklineApp.type === 'winloss') {
+                            // For bars, we need space
+                            const barW = w / data.length;
+                            return (i * barW) + (barW/2);
+                        }
+                        return i * step;
+                } else {
+                    // Simulated Date Axis (Spacing varies)
+                    // Assume data points are at [0, 5, 20, 35, 60...]
+                    // We'll just define fixed "relative days" for the 12 points
+                    const days = [0, 5, 20, 32, 45, 60, 70, 90, 105, 120, 150, 180];
+                    const totalDays = 180;
+                    const pxPerDay = w / totalDays;
+                    
+                    // For line, it's exact point.
+                    if (sparklineApp.type === 'column' || sparklineApp.type === 'winloss') {
+                        // Center bar on date
+                            return days[i] * pxPerDay;
+                    }
+                    return days[i] * pxPerDay;
+                }
+            };
+
+            // --- Draw Charts ---
+
+            if (sparklineApp.type === 'line') {
+                ctx.beginPath();
+                ctx.moveTo(getX(0), getY(data[0]));
+                for(let i=1; i<data.length; i++) {
+                    ctx.lineTo(getX(i), getY(data[i]));
+                }
+                ctx.strokeStyle = colorMain;
+                ctx.lineWidth = 2;
+                ctx.stroke();
+
+                // Markers
+                for(let i=0; i<data.length; i++) {
+                    const val = data[i];
+                    const x = getX(i);
+                    const y = getY(val);
+                    
+                    let dotColor = null;
+                    if (showMarkers) dotColor = colorMarker;
+                    if (showNeg && val < 0) dotColor = colorNeg;
+                    if (showHigh && val === max) dotColor = colorHigh;
+                    if (showLow && val === min) dotColor = colorLow;
+
+                    if (dotColor) {
+                        ctx.beginPath();
+                        ctx.arc(x, y, 3, 0, Math.PI * 2);
+                        ctx.fillStyle = dotColor;
+                        ctx.fill();
+                    }
+                }
+
+            } else if (sparklineApp.type === 'column') {
+                const barW = (w / data.length) - 4; // Gap
+                
+                for(let i=0; i<data.length; i++) {
+                    const val = data[i];
+                    // If Date axis, width might be fixed or dynamic, let's keep fixed width centered on X
+                    const cx = getX(i);
+                    const x = sparklineApp.useDateAxis ? cx - (barW/2) : (i * (w/data.length)) + 2; 
+
+                    const y = getY(val);
+                    const hBar = Math.abs(y - zeroY);
+                    // Draw from zeroY up or down
+                    const startY = val >= 0 ? y : zeroY;
+                    
+                    let fill = colorMain;
+                    if (showNeg && val < 0) fill = colorNeg;
+                    if (showHigh && val === max) fill = colorHigh;
+                    if (showLow && val === min) fill = colorLow;
+
+                    ctx.fillStyle = fill;
+                    ctx.fillRect(x, startY, barW, hBar);
+                }
+            } else if (sparklineApp.type === 'winloss') {
+                // Win/Loss: All bars same height, just direction matters
+                const barW = (w / data.length) - 4;
+                const halfH = drawingH / 4; // Arbitrary height for win/loss block
+
+                for(let i=0; i<data.length; i++) {
+                    const val = data[i];
+                    if (val === 0) continue; // No block for zero
+
+                    const cx = getX(i);
+                    const x = sparklineApp.useDateAxis ? cx - (barW/2) : (i * (w/data.length)) + 2;
+                    
+                    const isWin = val > 0;
+                    const startY = isWin ? zeroY - halfH : zeroY;
+                    
+                    let fill = isWin ? colorMain : colorNeg; // Default win/loss colors
+                    if (showNeg && val < 0) fill = colorNeg;
+                    // High/Low apply less to Win/Loss but technically can format the "block"
+                    if (showHigh && val === max) fill = colorHigh;
+                    if (showLow && val === min) fill = colorLow;
+
+                    ctx.fillStyle = fill;
+                    ctx.fillRect(x, startY, barW, halfH);
+                }
+            }
+
+            // Update Total Text
+            const sum = data.reduce((a,b)=>a+b, 0);
+            document.getElementById('data-sum').innerText = sum;
+        }
+    };
+
+    // --- Goal Seek Application ---
+    const goalSeekApp = {
+        openDialog: () => {
+            document.getElementById('gs-dialog').classList.remove('hidden');
+            document.getElementById('gs-dialog').classList.add('flex');
+        },
+        closeDialog: () => {
+            document.getElementById('gs-dialog').classList.add('hidden');
+            document.getElementById('gs-dialog').classList.remove('flex');
+        },
+        calculate: () => {
+            const p = parseFloat(document.getElementById('gs-price').value);
+            const u = parseFloat(document.getElementById('gs-units').value);
+            const c = parseFloat(document.getElementById('gs-cost').value);
+            const profit = (p * u) - c;
+            document.getElementById('gs-result').innerText = "$" + profit.toLocaleString(undefined, {minimumFractionDigits: 2});
+            return profit;
+        },
+        run: async () => {
+            const target = parseFloat(document.getElementById('gs-target-val').value);
+            const changeCell = document.getElementById('gs-change-cell').value;
+            if (isNaN(target)) return;
+
+            goalSeekApp.closeDialog();
+
+            // Simulation: Animate the numbers converging
+            let currentInput = parseFloat(document.getElementById(changeCell === 'price' ? 'gs-price' : 'gs-units').value);
+            const otherVal = parseFloat(document.getElementById(changeCell === 'price' ? 'gs-units' : 'gs-price').value);
+            const cost = parseFloat(document.getElementById('gs-cost').value);
+            
+            // Mathematical solution: Target = (Price * Units) - Cost
+            let solution = 0;
+            if (changeCell === 'price') {
+                solution = (target + cost) / otherVal;
+            } else {
+                solution = (target + cost) / (changeCell === 'units' ? parseFloat(document.getElementById('gs-price').value) : parseFloat(document.getElementById('gs-units').value));
+            }
+
+            // Animation Loop
+            const inputEl = document.getElementById(changeCell === 'price' ? 'gs-price' : 'gs-units');
+            
+            for (let i = 0; i < 20; i++) {
+                // Random fluctuation towards solution
+                const progress = i / 20;
+                const val = currentInput + (solution - currentInput) * progress; // Linear lerp for stability
+                inputEl.value = val.toFixed(2);
+                goalSeekApp.calculate();
+                await new Promise(r => setTimeout(r, 50));
+            }
+            inputEl.value = solution.toFixed(2);
+            goalSeekApp.calculate();
+        }
+    };
+
+    // --- Scenario Manager Application ---
+    const scenarioApp = {
+        currentScenario: 'current',
+        data: {
+            current: { revenue: 10000, cogs: 4000, overhead: 2000, name: "Current Values" },
+            best: { revenue: 15000, cogs: 4500, overhead: 2200, name: "Best Case" },
+            worst: { revenue: 6000, cogs: 3500, overhead: 2000, name: "Worst Case" },
+            lean: { revenue: 9500, cogs: 3800, overhead: 1500, name: "Lean Ops" }
+        },
+        
+        load: (key) => {
+            const s = scenarioApp.data[key];
+            const tbody = document.getElementById('scenario-table-body');
+            tbody.innerHTML = '';
+
+            // Build Rows
+            const rows = [
+                { label: "Total Revenue", val: s.revenue, type: 'rev' },
+                { label: "COGS (Cost of Goods)", val: s.cogs, type: 'exp' },
+                { label: "Overhead Expenses", val: s.overhead, type: 'exp' }
+            ];
+
+            rows.forEach(r => {
+                tbody.innerHTML += `
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                        <td class="px-6 py-3 text-sm text-gray-700">${r.label}</td>
+                        <td class="px-6 py-3 text-right text-sm font-mono ${r.type === 'exp' ? 'text-red-500' : 'text-gray-800'}">
+                            ${r.type==='exp' ? '-' : ''}$${r.val.toLocaleString()}
+                        </td>
+                    </tr>
+                `;
+            });
+
+            const profit = s.revenue - s.cogs - s.overhead;
+            const totalEl = document.getElementById('scenario-total');
+            totalEl.innerText = "$" + profit.toLocaleString();
+            totalEl.className = `px-6 py-4 text-right font-bold text-2xl ${profit >= 0 ? 'text-green-700' : 'text-red-600'}`;
+        },
+
+        saveCurrentAsNew: () => {
+            alert("In the real Excel, this opens a dialog to name your current cell values as a new Scenario. \n\nTry selecting 'Best Case' to see how instant switching works!");
+        }
+    };
+
+    // --- Data Table Application ---
+    const dataTableApp = {
+        generate: () => {
+            const loan = parseFloat(document.getElementById('dt-loan').value);
+            if (!loan) return;
+
+            // Axis Values
+            const rates = [0.03, 0.04, 0.05, 0.06, 0.07]; // Row Inputs
+            const terms = [10, 15, 20, 30]; // Column Inputs
+
+            // Create Table HTML
+            let html = '<table class="border-collapse bg-white text-sm shadow-sm">';
+            
+            // Header Row (Rates)
+            html += '<thead><tr><th class="p-3 border bg-gray-100 text-gray-400 font-mono text-xs">Yrs \\ Rate</th>';
+            rates.forEach(r => {
+                html += `<th class="p-3 border bg-blue-50 text-blue-800 font-bold">${(r*100).toFixed(1)}%</th>`;
+            });
+            html += '</tr></thead><tbody>';
+
+            // Rows (Terms)
+            terms.forEach(years => {
+                html += `<tr><th class="p-3 border bg-green-50 text-green-800 font-bold">${years} Yrs</th>`;
+                rates.forEach(rate => {
+                    // PMT Calculation: P * r * (1+r)^n / [(1+r)^n - 1]
+                    // r = monthly rate, n = months
+                    const r = rate / 12;
+                    const n = years * 12;
+                    const pmt = (loan * r * Math.pow(1+r, n)) / (Math.pow(1+r, n) - 1);
+                    
+                    html += `<td class="p-3 border text-right font-mono text-gray-700 hover:bg-yellow-50 transition-colors cursor-default" title="Monthly Payment">$${pmt.toFixed(2)}</td>`;
+                });
+                html += '</tr>';
+            });
+
+            html += '</tbody></table>';
+            document.getElementById('data-table-container').innerHTML = html;
+        }
+    };
+
+    // --- Spinner/Sensitivity Application ---
+    const spinnerApp = {
+        state: {
+            rent: 2000,
+            vacancy: 5 // percent
+        },
+        change: (key, delta) => {
+            spinnerApp.state[key] += delta;
+            
+            // Limits
+            if (key === 'vacancy') {
+                if (spinnerApp.state.vacancy < 0) spinnerApp.state.vacancy = 0;
+                if (spinnerApp.state.vacancy > 100) spinnerApp.state.vacancy = 100;
+            }
+            
+            spinnerApp.update();
+        },
+        update: () => {
+            const { rent, vacancy } = spinnerApp.state;
+            
+            // Update Displays
+            document.getElementById('spin-rent-disp').innerText = "$" + rent.toLocaleString();
+            document.getElementById('spin-vac-disp').innerText = vacancy + "%";
+
+            // Calc Logic
+            const annualRent = rent * 12;
+            const lost = annualRent * (vacancy / 100);
+            const total = annualRent - lost;
+
+            document.getElementById('spin-result').innerText = "$" + total.toLocaleString();
+
+            // Visual Bar (Assume max feasible is ~60k for scale)
+            const maxScale = 60000;
+            const pct = Math.min((total / maxScale) * 100, 100);
+            document.getElementById('spin-bar').style.width = pct + "%";
+        }
+    };
+
+    // --- Deploy Helper Application ---
+    const deployApp = {
+        openModal: () => {
+            document.getElementById('deploy-modal').classList.remove('hidden');
+            document.getElementById('deploy-modal').classList.add('flex');
+        },
+        closeModal: () => {
+            document.getElementById('deploy-modal').classList.add('hidden');
+            document.getElementById('deploy-modal').classList.remove('flex');
+        },
+        download: () => {
+            const htmlContent = "<!DOCTYPE html>" + document.documentElement.outerHTML;
+            const blob = new Blob([htmlContent], { type: "text/html" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "index.html";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        },
+        copyToClipboard: () => {
+            const htmlContent = "<!DOCTYPE html>" + document.documentElement.outerHTML;
+            navigator.clipboard.writeText(htmlContent).then(() => {
+                const btn = document.getElementById('copy-btn');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = `<span class="material-symbols-outlined text-sm">check</span> Copied!`;
+                btn.classList.add('text-green-600', 'bg-green-50', 'border-green-200');
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.classList.remove('text-green-600', 'bg-green-50', 'border-green-200');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                alert("Could not copy automatically. Please use the Download button.");
+            });
+        }
+    };
+
+    // Init
+    document.addEventListener('DOMContentLoaded', () => {
+        sparklineApp.init();
+        scenarioApp.load('current');
+        spinnerApp.update();
+    });
+
+</script>
+
+
+</body></html>
